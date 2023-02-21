@@ -11,6 +11,11 @@
 		5D52561A29A3C406009007D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D52561929A3C406009007D6 /* ContentView.swift */; };
 		5D52561C29A3C407009007D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D52561B29A3C407009007D6 /* Assets.xcassets */; };
 		5D52561F29A3C407009007D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D52561E29A3C407009007D6 /* Preview Assets.xcassets */; };
+		5D52562629A3C434009007D6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D52562529A3C434009007D6 /* Game.swift */; };
+		5D52562829A3CFE4009007D6 /* Game+GKMatchmakerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D52562729A3CFE4009007D6 /* Game+GKMatchmakerViewControllerDelegate.swift */; };
+		5D52562A29A3D212009007D6 /* Game+GKLocalPlayerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D52562929A3D212009007D6 /* Game+GKLocalPlayerListener.swift */; };
+		5D52562E29A3ED6B009007D6 /* GameplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D52562D29A3ED6B009007D6 /* GameplayView.swift */; };
+		5D52563029A3EE37009007D6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D52562F29A3EE37009007D6 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,13 @@
 		5D52561929A3C406009007D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D52561B29A3C407009007D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D52561E29A3C407009007D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D52562529A3C434009007D6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5D52562729A3CFE4009007D6 /* Game+GKMatchmakerViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+GKMatchmakerViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		5D52562929A3D212009007D6 /* Game+GKLocalPlayerListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+GKLocalPlayerListener.swift"; sourceTree = "<group>"; };
+		5D52562D29A3ED6B009007D6 /* GameplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayView.swift; sourceTree = "<group>"; };
+		5D52562F29A3EE37009007D6 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5D52563329A40D9F009007D6 /* GameKitRealTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameKitRealTime.entitlements; sourceTree = "<group>"; };
+		5DF363B129A4FC82000C1E5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,7 @@
 		5D52560B29A3C406009007D6 = {
 			isa = PBXGroup;
 			children = (
+				5DF363B129A4FC82000C1E5A /* README.md */,
 				5D52561629A3C406009007D6 /* GameKitRealTime */,
 				5D52561529A3C406009007D6 /* Products */,
 			);
@@ -51,8 +64,11 @@
 		5D52561629A3C406009007D6 /* GameKitRealTime */ = {
 			isa = PBXGroup;
 			children = (
+				5D52563329A40D9F009007D6 /* GameKitRealTime.entitlements */,
 				5D52561729A3C406009007D6 /* GameKitRealTimeApp.swift */,
-				5D52561929A3C406009007D6 /* ContentView.swift */,
+				5DF363B229A4FE2B000C1E5A /* View */,
+				5DF363B329A4FE38000C1E5A /* ViewModel */,
+				5DF363B429A4FE3E000C1E5A /* Model */,
 				5D52561B29A3C407009007D6 /* Assets.xcassets */,
 				5D52561D29A3C407009007D6 /* Preview Content */,
 			);
@@ -65,6 +81,33 @@
 				5D52561E29A3C407009007D6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5DF363B229A4FE2B000C1E5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D52561929A3C406009007D6 /* ContentView.swift */,
+				5D52562D29A3ED6B009007D6 /* GameplayView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5DF363B329A4FE38000C1E5A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5D52562529A3C434009007D6 /* Game.swift */,
+				5D52562929A3D212009007D6 /* Game+GKLocalPlayerListener.swift */,
+				5D52562729A3CFE4009007D6 /* Game+GKMatchmakerViewControllerDelegate.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5DF363B429A4FE3E000C1E5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D52562F29A3EE37009007D6 /* Player.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D52562E29A3ED6B009007D6 /* GameplayView.swift in Sources */,
 				5D52561A29A3C406009007D6 /* ContentView.swift in Sources */,
+				5D52562629A3C434009007D6 /* Game.swift in Sources */,
+				5D52562829A3CFE4009007D6 /* Game+GKMatchmakerViewControllerDelegate.swift in Sources */,
+				5D52563029A3EE37009007D6 /* Player.swift in Sources */,
+				5D52562A29A3D212009007D6 /* Game+GKLocalPlayerListener.swift in Sources */,
 				5D52561829A3C406009007D6 /* GameKitRealTimeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -264,10 +312,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GameKitRealTime/GameKitRealTime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GameKitRealTime/Preview Content\"";
-				DEVELOPMENT_TEAM = 94AXJS8DQZ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -280,11 +329,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zcutlerf.GameKitRealTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,10 +344,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GameKitRealTime/GameKitRealTime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GameKitRealTime/Preview Content\"";
-				DEVELOPMENT_TEAM = 94AXJS8DQZ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,11 +361,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zcutlerf.GameKitRealTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

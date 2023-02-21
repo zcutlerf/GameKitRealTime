@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GameKitRealTimeApp: App {
+    @StateObject var game = Game()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(game)
         }
     }
 }
