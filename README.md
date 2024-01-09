@@ -1,4 +1,4 @@
-# Creating turn-based games
+# Creating real-time games
 
 Develop games where multiple players can play simultaneously.
 
